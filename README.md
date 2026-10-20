@@ -1,16 +1,74 @@
-<div align="center">
+ <div align="center">
 
-<img src="assets/hero.svg" alt="Bharat Poojari — Full-stack developer, building thoughtful software" width="100%" />
+  <!-- ═══════════════════════════════════════════════ -->
+  <!--                 HERO EXPERIENCE                -->
+  <!-- ═══════════════════════════════════════════════ -->
 
-<p>
-  <a href="https://bharat-poojari.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-0B1020?style=for-the-badge&logo=vercel&logoColor=8BE9FD" alt="Portfolio" /></a>
-  <a href="https://github.com/bharat-poojari"><img src="https://img.shields.io/badge/GITHUB-0B1020?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub" /></a>
-  <a href="mailto:bharatp0316@gmail.com"><img src="https://img.shields.io/badge/CONTACT-0B1020?style=for-the-badge&logo=gmail&logoColor=FF79C6" alt="Email" /></a>
-</p>
+  <img src="assets/hero.svg" width="100%" alt="Bharat Poojari — Full-stack developer | Engineering ideas into reality" />
 
-**FULL-STACK DEVELOPMENT · AI-POWERED TOOLS · THOUGHTFUL DIGITAL EXPERIENCES**
+  <br/>
 
-*“I don't build interfaces. I build systems that move.”*
+  <!-- ANIMATED IDENTITY -->
+
+  <a href="https://bharat-poojari.vercel.app/">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=2200&pause=650&color=8BE9FD&center=true&vCenter=true&repeat=true&width=750&height=40&lines=%3E+FULL-STACK+DEVELOPER;%3E+BUILDING+BEYOND+THE+INTERFACE;%3E+AI+%C3%97+ENGINEERING+%C3%97+DESIGN;%3E+TURNING+IDEAS+INTO+SYSTEMS;%3E+DESIGN.+DEVELOP.+DEPLOY." alt="Animated developer identity" />
+  </a>
+
+  <br/>
+
+  <img src="https://img.shields.io/badge/STATUS-ALWAYS_BUILDING-0B1020?style=flat-square&labelColor=0B1020&color=8BE9FD" alt="Always building" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/FOCUS-FULL--STACK_%2B_AI-0B1020?style=flat-square&labelColor=0B1020&color=BD93F9" alt="Full-stack and AI focus" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/MINDSET-BUILD_%2F_LEARN_%2F_SHIP-0B1020?style=flat-square&labelColor=0B1020&color=50FA7B" alt="Build, learn, ship" />
+
+  <br/>
+  <br/>
+
+  <!-- PRIMARY NAVIGATION -->
+
+  <a href="https://bharat-poojari.vercel.app/">
+    <img src="https://img.shields.io/badge/%E2%97%88_EXPLORE-PORTFOLIO-0B1020?style=for-the-badge&logo=vercel&logoColor=8BE9FD&labelColor=0B1020" alt="Explore portfolio" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/bharat-poojari">
+    <img src="https://img.shields.io/badge/%E2%97%88_EXPLORE-SOURCE_CODE-0B1020?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0B1020" alt="Explore source code" />
+  </a>
+  &nbsp;
+  <a href="mailto:bharatp0316@gmail.com">
+    <img src="https://img.shields.io/badge/%E2%97%88_INITIATE-CONTACT-0B1020?style=for-the-badge&logo=gmail&logoColor=FF79C6&labelColor=0B1020" alt="Contact Bharat" />
+  </a>
+
+  <br/>
+  <br/>
+
+  <!-- PERSONAL MANIFESTO -->
+
+  <h2>Ideas are everywhere.<br/>Execution is the difference.</h2>
+
+  <p>
+    I engineer digital experiences where
+    <strong>thoughtful design</strong>,
+    <strong>solid engineering</strong>, and
+    <strong>useful technology</strong>
+    come together.
+  </p>
+
+  <br/>
+
+  <!-- VISUAL SEPARATOR -->
+
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:8BE9FD,50:BD93F9,100:FF79C6&height=2&section=header" width="75%" alt="" />
+
+  <br/>
+
+  <sub>
+    <code>INITIALIZING IDEAS</code>
+    &nbsp; ◈ &nbsp;
+    <code>ENGINEERING SOLUTIONS</code>
+    &nbsp; ◈ &nbsp;
+    <code>SHIPPING IMPACT</code>
+  </sub>
 
 </div>
 

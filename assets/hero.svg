@@ -1,51 +1,171 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
   <title id="title">Bharat Poojari — Full-stack developer</title>
-  <desc id="desc">A dark futuristic developer banner with cyan and violet orbital lines, a glowing geometric core, and the tagline Thoughtful software. Built for people.</desc>
+  <desc id="desc">An animated, cinematic developer banner with a luminous geometric core, orbital energy paths, subtle code interface, and the message Build with curiosity. Ship with intention.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#080d18"/><stop offset=".55" stop-color="#11152a"/><stop offset="1" stop-color="#080d18"/>
+      <stop offset="0" stop-color="#070B14"/>
+      <stop offset=".48" stop-color="#10172A"/>
+      <stop offset="1" stop-color="#080B17"/>
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8be9fd"/><stop offset=".55" stop-color="#bd93f9"/><stop offset="1" stop-color="#ff79c6"/>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2=".3">
+      <stop offset="0" stop-color="#8BE9FD"/>
+      <stop offset=".48" stop-color="#A6B8FF"/>
+      <stop offset=".72" stop-color="#BD93F9"/>
+      <stop offset="1" stop-color="#FF79C6"/>
     </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#8be9fd" stop-opacity=".22"/><stop offset="1" stop-color="#8be9fd" stop-opacity="0"/>
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset=".68" stop-color="#DCE8F8"/>
+      <stop offset="1" stop-color="#8BE9FD"/>
+    </linearGradient>
+    <radialGradient id="ambient">
+      <stop offset="0" stop-color="#8BE9FD" stop-opacity=".20"/>
+      <stop offset=".46" stop-color="#8B5CF6" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#8BE9FD" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#91a4c5" stroke-opacity=".11" stroke-width="1"/>
+    <radialGradient id="coreFill">
+      <stop offset="0" stop-color="#8BE9FD" stop-opacity=".23"/>
+      <stop offset=".55" stop-color="#8BE9FD" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#BD93F9" stop-opacity=".02"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#A9B8D0" stroke-opacity=".075" stroke-width=".8"/>
+      <circle cx="0" cy="0" r="1" fill="#8BE9FD" fill-opacity=".18"/>
     </pattern>
-    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <pattern id="microGrid" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M6 0H0V6" fill="none" stroke="#8BE9FD" stroke-opacity=".12" stroke-width=".5"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="bigGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <clipPath id="panelClip"><rect width="1200" height="420" rx="22"/></clipPath>
   </defs>
-  <rect width="1200" height="390" rx="20" fill="url(#bg)"/>
-  <rect width="1200" height="390" rx="20" fill="url(#grid)"/>
-  <circle cx="920" cy="190" r="260" fill="url(#glow)"/>
-  <g fill="none" stroke="url(#line)" stroke-width="1.4" opacity=".68">
-    <ellipse cx="930" cy="190" rx="190" ry="66" transform="rotate(-26 930 190)"/>
-    <ellipse cx="930" cy="190" rx="190" ry="66" transform="rotate(32 930 190)"/>
-    <ellipse cx="930" cy="190" rx="140" ry="140" transform="rotate(22 930 190)" stroke-dasharray="5 9"/>
-    <path d="M760 190H1100M930 36V344" stroke-opacity=".25" stroke-dasharray="3 8"/>
+
+  <g clip-path="url(#panelClip)">
+    <rect width="1200" height="420" fill="url(#bg)"/>
+    <rect width="1200" height="420" fill="url(#grid)"/>
+    <rect x="760" y="0" width="440" height="420" fill="url(#microGrid)" opacity=".35"/>
+    <ellipse cx="916" cy="204" rx="350" ry="300" fill="url(#ambient)">
+      <animate attributeName="opacity" values=".68;1;.68" dur="7s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Ambient scan light -->
+    <rect x="0" y="-100" width="1200" height="72" fill="url(#spectrum)" opacity=".045">
+      <animate attributeName="y" values="-100;450;-100" dur="12s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Left identity panel -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+      <rect x="60" y="43" width="8" height="8" rx="2" fill="#8BE9FD">
+        <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="80" y="51" fill="#8BE9FD" font-size="12" font-weight="600" letter-spacing="3.4">INDEPENDENT DEVELOPER <tspan fill="#52617A">/</tspan> 2026</text>
+      <text x="60" y="145" fill="url(#nameFill)" font-size="66" font-weight="800" letter-spacing="-3.4">BHARAT</text>
+      <text x="60" y="211" fill="url(#nameFill)" font-size="66" font-weight="800" letter-spacing="-3.4">POOJARI<tspan fill="#8BE9FD">.</tspan></text>
+      <rect x="62" y="232" width="62" height="3" rx="1.5" fill="url(#spectrum)">
+        <animate attributeName="width" values="34;82;62" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="62" y="267" fill="#D5DEED" font-size="16" font-weight="600" letter-spacing="2.2">FULL-STACK DEVELOPER</text>
+      <text x="62" y="296" fill="#9EADC5" font-size="14.5">Engineering thoughtful digital experiences.</text>
+
+      <!-- Compact capability labels -->
+      <g font-size="10" font-weight="600" letter-spacing="1.1">
+        <rect x="62" y="322" width="105" height="25" rx="5" fill="#111B2D" stroke="#8BE9FD" stroke-opacity=".45"/>
+        <text x="114.5" y="338" fill="#8BE9FD" text-anchor="middle">FULL-STACK</text>
+        <rect x="176" y="322" width="76" height="25" rx="5" fill="#111B2D" stroke="#BD93F9" stroke-opacity=".55"/>
+        <text x="214" y="338" fill="#CDB2FF" text-anchor="middle">AI TOOLS</text>
+        <rect x="261" y="322" width="98" height="25" rx="5" fill="#111B2D" stroke="#FF79C6" stroke-opacity=".45"/>
+        <text x="310" y="338" fill="#FF9BD5" text-anchor="middle">PRODUCT UX</text>
+      </g>
+
+      <text x="62" y="388" fill="#74839D" font-size="10.5" letter-spacing="1.65">SIRSI, INDIA</text>
+      <circle cx="171" cy="384" r="2" fill="#50FA7B"/>
+      <text x="182" y="388" fill="#A4B2C9" font-size="10.5" letter-spacing="1.3">BUILD <tspan fill="#52617A">/</tspan> REFINE <tspan fill="#52617A">/</tspan> SHIP</text>
+    </g>
+
+    <!-- Divider and tiny interface markers -->
+    <path d="M444 64V356" stroke="#9FB1CE" stroke-opacity=".16" stroke-width="1"/>
+    <path d="M444 64h18M444 356h18" stroke="#8BE9FD" stroke-opacity=".7" stroke-width="1.5"/>
+
+    <!-- Reactor atmospheric bloom -->
+    <circle cx="861" cy="202" r="148" fill="#8BE9FD" opacity=".07" filter="url(#bigGlow)">
+      <animate attributeName="r" values="135;155;135" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".045;.10;.045" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Orbital system -->
+    <g fill="none" stroke="url(#spectrum)" stroke-width="1.15">
+      <ellipse cx="862" cy="202" rx="218" ry="76" transform="rotate(-27 862 202)" opacity=".68"/>
+      <ellipse cx="862" cy="202" rx="218" ry="76" transform="rotate(31 862 202)" opacity=".62"/>
+      <ellipse cx="862" cy="202" rx="174" ry="174" transform="rotate(17 862 202)" stroke-dasharray="2 10" opacity=".62">
+        <animateTransform attributeName="transform" type="rotate" from="0 862 202" to="360 862 202" dur="65s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="862" cy="202" rx="145" ry="145" transform="rotate(-34 862 202)" stroke-dasharray="40 9 3 9" opacity=".28">
+        <animateTransform attributeName="transform" type="rotate" from="360 862 202" to="0 862 202" dur="48s" repeatCount="indefinite"/>
+      </ellipse>
+      <path d="M625 202H1099M862 28V376" stroke="#8BE9FD" stroke-opacity=".18" stroke-dasharray="3 9"/>
+    </g>
+
+    <!-- Moving energy points -->
+    <g filter="url(#glow)">
+      <circle r="4" fill="#8BE9FD">
+        <animateMotion dur="8s" repeatCount="indefinite" path="M650 128 C760 50 1005 78 1065 200 C1105 292 900 342 735 273 C625 228 625 160 650 128Z"/>
+      </circle>
+      <circle r="3" fill="#FF79C6">
+        <animateMotion dur="10s" repeatCount="indefinite" path="M690 290 C650 175 785 75 935 106 C1085 137 1085 265 950 302 C820 339 700 245 690 290Z"/>
+      </circle>
+      <circle r="2.5" fill="#BD93F9">
+        <animateMotion dur="6.5s" repeatCount="indefinite" path="M862 28 C1015 110 1040 260 862 376 C685 260 710 110 862 28Z"/>
+      </circle>
+    </g>
+
+    <!-- Geometric core -->
+    <g filter="url(#glow)">
+      <path d="M862 104 946 153 946 251 862 300 778 251 778 153Z" fill="#0D1729" fill-opacity=".9" stroke="#8BE9FD" stroke-width="1.8">
+        <animate attributeName="stroke-opacity" values=".65;1;.65" dur="3.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M862 122 930 161 930 239 862 278 794 239 794 161Z" fill="url(#coreFill)" stroke="#BD93F9" stroke-width="1.2" stroke-opacity=".9"/>
+      <path d="M862 148 908 175 908 229 862 256 816 229 816 175Z" fill="#101E34" stroke="#8BE9FD" stroke-width="1.5"/>
+      <path d="M862 164 894 183 894 221 862 240 830 221 830 183Z" fill="#8BE9FD" fill-opacity=".09" stroke="url(#spectrum)" stroke-width="1.3"/>
+      <path d="M862 181 880 191 880 213 862 223 844 213 844 191Z" fill="#8BE9FD" fill-opacity=".2" stroke="#8BE9FD" stroke-width="1.2"/>
+      <circle cx="862" cy="202" r="5.5" fill="#DDFBFF">
+        <animate attributeName="r" values="4.5;7;4.5" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="862" cy="202" r="18" fill="none" stroke="#8BE9FD" stroke-opacity=".7">
+        <animate attributeName="r" values="12;27;12" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".65;0;.65" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Orbit nodes -->
+    <g fill="#8BE9FD" filter="url(#glow)">
+      <circle cx="679" cy="117" r="3"/><circle cx="1036" cy="113" r="2.5"/><circle cx="1051" cy="290" r="3"/><circle cx="700" cy="300" r="2.5"/><circle cx="978" cy="57" r="2"/>
+    </g>
+    <g stroke="#8BE9FD" stroke-opacity=".48" fill="none">
+      <path d="M679 117h-25v-13h-20"/><path d="M1051 290h26v13h22"/><path d="M978 57v-15h24"/>
+    </g>
+
+    <!-- Floating code panel -->
+    <g transform="translate(970 315)">
+      <rect width="165" height="51" rx="7" fill="#0A1020" fill-opacity=".92" stroke="#8BE9FD" stroke-opacity=".34"/>
+      <circle cx="12" cy="12" r="2.2" fill="#FF79C6"/><circle cx="20" cy="12" r="2.2" fill="#F1FA8C"/><circle cx="28" cy="12" r="2.2" fill="#50FA7B"/>
+      <path d="M10 23H155" stroke="#8B9BB6" stroke-opacity=".16"/>
+      <text x="11" y="39" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" fill="#8BE9FD">const ideas = ship()</text>
+      <rect x="142" y="31" width="5" height="10" fill="#BD93F9">
+        <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Corner coordinates and frame -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#71809A" letter-spacing="1.2">
+      <text x="1138" y="43" text-anchor="end">BP / 001</text>
+      <text x="1138" y="395" text-anchor="end">IDEA → SYSTEM → IMPACT</text>
+    </g>
+    <path d="M20 62V20H62M1138 20H1180V62M20 358V400H62M1138 400H1180V358" fill="none" stroke="url(#spectrum)" stroke-width="1.3" stroke-opacity=".65"/>
+    <rect x=".6" y=".6" width="1198.8" height="418.8" rx="21.4" fill="none" stroke="#8BE9FD" stroke-opacity=".27" stroke-width="1.2"/>
   </g>
-  <g filter="url(#softGlow)">
-    <path d="M930 108 1000 149 1000 231 930 272 860 231 860 149Z" fill="#111b31" stroke="#8be9fd" stroke-width="1.8"/>
-    <path d="M930 128 980 157 980 219 930 248 880 219 880 157Z" fill="none" stroke="#bd93f9" stroke-width="1.4"/>
-    <path d="M930 153 958 169 958 207 930 223 902 207 902 169Z" fill="#8be9fd" fill-opacity=".14" stroke="#8be9fd" stroke-width="1.5"/>
-    <circle cx="930" cy="188" r="6" fill="#8be9fd"/>
-  </g>
-  <g fill="#8be9fd">
-    <circle cx="785" cy="111" r="3"/><circle cx="1065" cy="118" r="2.5"/><circle cx="1052" cy="272" r="3"/>
-    <circle cx="825" cy="286" r="2"/><circle cx="1015" cy="75" r="2"/>
-  </g>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="64" y="67" fill="#8be9fd" font-size="13" letter-spacing="4">PORTFOLIO / 2026</text>
-    <path d="M64 88H124" stroke="#8be9fd" stroke-width="2"/>
-    <text x="60" y="157" fill="#f1f5f9" font-size="47" font-weight="700" letter-spacing="-1.5">BHARAT</text>
-    <text x="60" y="211" fill="#f1f5f9" font-size="47" font-weight="700" letter-spacing="-1.5">POOJARI<tspan fill="#8be9fd">.</tspan></text>
-    <text x="64" y="253" fill="#bdc9dd" font-size="17">FULL-STACK DEVELOPER</text>
-    <text x="64" y="294" fill="#8be9fd" font-size="15">Thoughtful software. Built for people.</text>
-    <text x="64" y="351" fill="#8794ae" font-size="11" letter-spacing="2">SIRSI, INDIA  /  BUILD • REFINE • SHIP</text>
-    <text x="1090" y="350" fill="#8794ae" font-size="10" text-anchor="end">BP // 001</text>
-  </g>
-  <rect x=".5" y=".5" width="1199" height="389" rx="19.5" fill="none" stroke="#8be9fd" stroke-opacity=".25"/>
 </svg>
