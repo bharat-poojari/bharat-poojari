@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title desc">
+  <title id="title">Build with curiosity. Ship with intention.</title>
+  <desc id="desc">A minimal dark footer with fine cyan and violet orbital lines and a glowing center point.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#080d18"/><stop offset=".5" stop-color="#141a30"/><stop offset="1" stop-color="#080d18"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8be9fd" stop-opacity="0"/><stop offset=".5" stop-color="#8be9fd"/><stop offset="1" stop-color="#bd93f9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="150" rx="16" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#stroke)" stroke-width="1.2">
+    <path d="M0 75H1200" opacity=".6"/>
+    <path d="M100 75C260 8 390 8 550 75S840 142 1100 75" opacity=".55"/>
+    <path d="M100 75C260 142 390 142 550 75S840 8 1100 75" opacity=".35"/>
+  </g>
+  <circle cx="600" cy="75" r="22" fill="#8be9fd" fill-opacity=".08" stroke="#8be9fd" stroke-opacity=".8"/>
+  <circle cx="600" cy="75" r="5" fill="#8be9fd"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" text-anchor="middle">
+    <text x="600" y="35" fill="#8be9fd" font-size="10" letter-spacing="3">END OF TRANSMISSION</text>
+    <text x="600" y="125" fill="#dce6f6" font-size="13" letter-spacing="2">BUILD WITH CURIOSITY · SHIP WITH INTENTION</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="149" rx="15.5" fill="none" stroke="#8be9fd" stroke-opacity=".2"/>
+</svg>
