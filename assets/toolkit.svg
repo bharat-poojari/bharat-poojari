@@ -31,7 +31,7 @@
       .tech{font-size:13px;font-weight:600;fill:#dbe6f5}
       .desc{font-size:12.5px;fill:#aab8cd}
     </style>
-    <clipPath id="clip"><rect width="1200" height="700" rx="24"/></clipPath>
+    <clipPath id="clip"><rect width="1200" height="700"/></clipPath>
   </defs>
 
   <g clip-path="url(#clip)">

@@ -37,7 +37,7 @@
     </filter>
 
     <clipPath id="clip">
-      <rect width="1200" height="220" rx="16"/>
+      <rect width="1200" height="220"/>
     </clipPath>
   </defs>
 

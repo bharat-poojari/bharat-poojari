@@ -37,7 +37,7 @@
 
 <div align="center" style="line-height:0">
 <img src="assets/origin.svg" width="100%" alt="Bharat Poojari — Full-stack developer | Engineering ideas into reality" style="display:block;width:100%;height:auto;margin:0;padding:0;border:0" />
-<a href="https://github.com/bharat-poojari" target="_blank" rel="noopener" style="display:block;margin:0;padding:0;line-height:0">
+<a href="https://github.com/bharat-poojari?tab=repositories" target="_blank" rel="noopener" style="display:block;margin:0;padding:0;line-height:0">
   <img src="assets/selected-work.svg" width="100%" alt="Bharat Poojari — Full-stack developer | Engineering ideas into reality" style="display:block;width:100%;height:auto;margin:0;padding:0;border:0" />
 </a>
 <img src="assets/toolkit.svg" width="100%" alt="Bharat Poojari — Full-stack developer | Engineering ideas into reality" style="display:block;width:100%;height:auto;margin:0;padding:0;border:0" />

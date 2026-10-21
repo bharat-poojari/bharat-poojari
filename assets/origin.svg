@@ -28,7 +28,7 @@
       <feGaussianBlur stdDeviation="7" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="frame"><rect width="1200" height="680" rx="24"/></clipPath>
+    <clipPath id="frame"><rect width="1200" height="680"/></clipPath>
   </defs>
 
   <g clip-path="url(#frame)">
