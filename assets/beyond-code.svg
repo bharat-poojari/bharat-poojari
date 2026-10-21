@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="920" viewBox="0 0 1440 920" role="img" aria-labelledby="title desc">
+<title id="title">06 / Beyond the Code — Bharat Poojari</title>
+<desc id="desc">An editorial portfolio section about education, location, mindset, and the belief that useful software combines usefulness, engineering, and experience.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#080b13"/><stop offset=".55" stop-color="#101624"/><stop offset="1" stop-color="#090d16"/>
+  </linearGradient>
+  <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8be9fd"/><stop offset="1" stop-color="#bd93f9"/>
+  </linearGradient>
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8be9fd" stop-opacity="0"/><stop offset=".5" stop-color="#8be9fd" stop-opacity=".75"/><stop offset="1" stop-color="#8be9fd" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+    <path d="M42 0H0V42" fill="none" stroke="#8be9fd" stroke-opacity=".055" stroke-width="1"/>
+  </pattern>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    .muted{fill:#93a2ba}.light{fill:#f4f7fb}.lime{fill:#8be9fd}
+    .eyebrow{font-size:13px;font-weight:700;letter-spacing:3px}
+    .small{font-size:12px;letter-spacing:1.5px}
+    .card{fill:#0b111d;stroke:#334155;stroke-width:1}
+    .rule{stroke:#475569;stroke-opacity:.6}
+    .float{animation:float 5s ease-in-out infinite}
+    .float2{animation:float 5s ease-in-out -2.5s infinite}
+    .pulse{animation:pulse 3.5s ease-in-out infinite}
+    .orbit{transform-box:fill-box;transform-origin:center;animation:orbit 18s linear infinite}
+    .draw{stroke-dasharray:380;stroke-dashoffset:380;animation:draw 2.5s ease-out .25s forwards}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @media (prefers-reduced-motion:reduce){.float,.float2,.pulse,.orbit,.draw{animation:none}}
+  </style>
+</defs>
+<rect width="1440" height="920" fill="url(#bg)"/>
+<rect width="1440" height="920" fill="url(#grid)"/>
+<circle cx="1250" cy="150" r="220" fill="#8be9fd" opacity=".035"/>
+<circle cx="1250" cy="150" r="150" fill="none" stroke="#8be9fd" stroke-opacity=".12" stroke-dasharray="2 9" class="orbit"/>
+<path d="M0 110H1440" stroke="url(#line)" stroke-width="1"/>
+<g transform="translate(94 68)">
+  <rect x="0" y="-13" width="5" height="22" rx="2.5" fill="url(#lime)"/>
+  <text x="20" y="4" class="eyebrow lime">06 / BEYOND THE CODE</text>
+</g>
+<text x="94" y="180" class="light" font-size="64" font-weight="650" letter-spacing="-2.7">The person behind</text>
+<text x="94" y="250" class="light" font-size="64" font-weight="650" letter-spacing="-2.7">the <tspan fill="url(#lime)">process.</tspan></text>
+<text x="98" y="292" class="muted" font-size="17">A few things that shape how I think, build, and keep improving.</text>
+
+<!-- Three profile pillars -->
+<g transform="translate(94 350)">
+  <rect class="card" width="390" height="186" rx="16"/>
+  <path d="M18 1H372" stroke="#8be9fd" stroke-opacity=".7" stroke-width="2"/>
+  <text x="26" y="37" class="eyebrow muted">01 / EDUCATION</text>
+  <g transform="translate(28 61)" class="float">
+    <path d="M0 12L22 0L44 12L22 24Z" fill="none" stroke="#8be9fd" stroke-width="1.8"/>
+    <path d="M8 17V28Q22 39 36 28V17M44 12V27" fill="none" stroke="#8be9fd" stroke-width="1.8"/>
+    <circle cx="44" cy="30" r="3" fill="#8be9fd"/>
+  </g>
+  <text x="28" y="131" class="light" font-size="18" font-weight="650">Bachelor of Computer</text>
+  <text x="28" y="155" class="light" font-size="18" font-weight="650">Applications</text>
+  <text x="28" y="174" class="muted" font-size="11">FOUNDATION IN COMPUTING</text>
+</g>
+<g transform="translate(525 350)">
+  <rect class="card" width="390" height="186" rx="16"/>
+  <path d="M18 1H372" stroke="#8be9fd" stroke-opacity=".7" stroke-width="2"/>
+  <text x="26" y="37" class="eyebrow muted">02 / BASE</text>
+  <g transform="translate(30 60)" class="float2">
+    <path d="M22 0C9 0 0 10 0 22C0 39 22 56 22 56S44 39 44 22C44 10 35 0 22 0Z" fill="none" stroke="#8be9fd" stroke-width="1.8"/>
+    <circle cx="22" cy="22" r="7" fill="none" stroke="#8be9fd" stroke-width="1.8"/>
+  </g>
+  <text x="28" y="131" class="light" font-size="21" font-weight="650">Sirsi, Karnataka, India</text>
+  <text x="28" y="157" class="muted" font-size="13">ROOTED LOCALLY · BUILDING FOR EVERYWHERE</text>
+  <path d="M28 174H174" stroke="#8be9fd" stroke-opacity=".7"/>
+</g>
+<g transform="translate(956 350)">
+  <rect class="card" width="390" height="186" rx="16"/>
+  <path d="M18 1H372" stroke="#8be9fd" stroke-opacity=".7" stroke-width="2"/>
+  <text x="26" y="37" class="eyebrow muted">03 / MINDSET</text>
+  <g transform="translate(28 64)">
+    <path d="M0 9H47M38 0L47 9L38 18" fill="none" stroke="#8be9fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M0 32H47M38 23L47 32L38 41" fill="none" stroke="#8be9fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".65"/>
+  </g>
+  <text x="28" y="131" class="light" font-size="24" font-weight="700">Build <tspan class="lime">→</tspan> Learn</text>
+  <text x="28" y="160" class="light" font-size="24" font-weight="700"> <tspan class="lime">→</tspan> Refine</text>
+  <circle cx="352" cy="145" r="13" fill="none" stroke="#8be9fd" stroke-opacity=".7" class="pulse"/>
+  <circle cx="352" cy="145" r="4" fill="#8be9fd"/>
+</g>
+
+<!-- Main belief -->
+<g transform="translate(94 583)">
+  <text x="0" y="0" class="eyebrow lime">WHAT I BELIEVE</text>
+  <text x="0" y="51" class="light" font-size="31" font-weight="600" letter-spacing="-1">Good software lives where</text>
+  <text x="0" y="92" class="light" font-size="31" font-weight="600" letter-spacing="-1">
+    <tspan fill="#8be9fd">usefulness</tspan><tspan fill="#64748b"> × </tspan><tspan>engineering</tspan>
+  </text>
+  <text x="0" y="133" class="light" font-size="31" font-weight="600" letter-spacing="-1">
+    <tspan fill="#64748b">× </tspan><tspan fill="#8be9fd">experience</tspan><tspan>.</tspan>
+  </text>
+  <path d="M0 158H550" class="draw" fill="none" stroke="url(#lime)" stroke-width="2"/>
+</g>
+
+<g transform="translate(770 586)">
+  <rect x="0" y="0" width="576" height="210" rx="18" fill="#0b111d" stroke="#334155"/>
+  <text x="28" y="36" class="eyebrow muted">THE KIND OF WORK I VALUE</text>
+  <g transform="translate(28 61)">
+    <circle cx="12" cy="12" r="12" fill="#8be9fd" fill-opacity=".12" stroke="#8be9fd" stroke-opacity=".7"/>
+    <path d="M7 12L11 16L18 8" fill="none" stroke="#8be9fd" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="38" y="17" class="light" font-size="16" font-weight="600">Solve real problems</text>
+    <text x="38" y="38" class="muted" font-size="13">Purpose before unnecessary complexity.</text>
+  </g>
+  <g transform="translate(28 119)">
+    <circle cx="12" cy="12" r="12" fill="#8be9fd" fill-opacity=".12" stroke="#8be9fd" stroke-opacity=".7"/>
+    <path d="M6 12H18M12 6V18" stroke="#8be9fd" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="38" y="17" class="light" font-size="16" font-weight="600">Simplify complex workflows</text>
+    <text x="38" y="38" class="muted" font-size="13">Make the useful path feel natural.</text>
+  </g>
+  <g transform="translate(28 177)">
+    <circle cx="12" cy="12" r="12" fill="#8be9fd" fill-opacity=".12" stroke="#8be9fd" stroke-opacity=".7"/>
+    <path d="M7 14Q12 4 17 14M8 17H16" fill="none" stroke="#8be9fd" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="38" y="17" class="light" font-size="16" font-weight="600">Create reasons to return</text>
+    <text x="38" y="38" class="muted" font-size="13">Thoughtful experiences earn repeat use.</text>
+  </g>
+</g>
+
+<path d="M94 840H1346" stroke="#475569" stroke-opacity=".6"/>
+<text x="94" y="872" class="small muted">CURIOUS BY DEFAULT</text>
+<text x="1346" y="872" class="small lime" text-anchor="end">BUILD WITH INTENT · IMPROVE WITH FEEDBACK</text>
+<circle cx="1325" cy="70" r="3" fill="#8be9fd" filter="url(#glow)" class="pulse"/>
+</svg>

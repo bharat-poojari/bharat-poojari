@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">04 / Build Pipeline — Bharat Poojari</title>
+  <desc id="desc">A standalone animated build pipeline showing Understand, Design, Build, Integrate, Test and Refine, and Ship, with connecting paths, animated progress pulses, and a maintainability statement.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b13"/>
+      <stop offset=".55" stop-color="#101624"/>
+      <stop offset="1" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8be9fd"/>
+      <stop offset=".4" stop-color="#bd93f9"/>
+      <stop offset=".7" stop-color="#ff79c6"/>
+      <stop offset="1" stop-color="#50fa7b"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#a9b8d0" stroke-opacity=".055" stroke-width=".7"/>
+      <circle cx="0" cy="0" r="1" fill="#8be9fd" fill-opacity=".12"/>
+    </pattern>
+    <radialGradient id="haze">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+      .step{fill:#f4f7fb;font-size:15px;font-weight:750}
+      .num{font-size:10px;font-weight:700;letter-spacing:1.5px}
+    </style>
+    <clipPath id="clip"><rect width="1200" height="620" rx="24"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="620" fill="url(#bg)"/>
+    <rect width="1200" height="620" fill="url(#grid)"/>
+    <ellipse cx="600" cy="250" rx="570" ry="290" fill="url(#haze)">
+      <animate attributeName="opacity" values=".5;1;.5" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Header -->
+    <g class="mono">
+      <circle cx="60" cy="48" r="4" fill="#8be9fd">
+        <animate attributeName="r" values="3;5;3" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="76" y="52" fill="#8be9fd" font-size="11" letter-spacing="3">METHOD / DELIVERY SYSTEM</text>
+      <text x="1140" y="52" text-anchor="end" fill="#74839b" font-size="10" letter-spacing="2">PIPELINE — 04</text>
+    </g>
+    <text x="56" y="125" class="sans" fill="#f5f7fb" font-size="51" font-weight="850" letter-spacing="-2.5">Build <tspan fill="url(#spectrum)">Pipeline.</tspan></text>
+    <text x="60" y="160" class="sans" fill="#aebbd0" font-size="15.5">A clear path from problem framing to a dependable release.</text>
+    <path d="M60 185H1140" stroke="#a9b8d0" stroke-opacity=".17"/>
+    <path d="M60 185H248" stroke="url(#spectrum)" stroke-width="2.2" stroke-linecap="round">
+      <animate attributeName="stroke-dasharray" values="0 188;188 0;0 188" dur="6s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Pipeline backbone -->
+    <path d="M110 310H1090" stroke="#243147" stroke-width="3" stroke-linecap="round"/>
+    <path d="M110 310H1090" stroke="url(#spectrum)" stroke-width="2" stroke-linecap="round" stroke-dasharray="22 978" opacity=".95">
+      <animate attributeName="stroke-dashoffset" values="0;-1000" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <g fill="#8be9fd" filter="url(#glow)">
+      <circle r="4" cy="310" fill="#8be9fd">
+        <animate attributeName="cx" values="110;1090;110" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="3" cy="310" fill="#bd93f9">
+        <animate attributeName="cx" values="1090;110;1090" dur="10s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Step 01 -->
+    <g transform="translate(110 310)">
+      <circle r="45" fill="#0b1422" stroke="#8be9fd" stroke-width="1.5"/>
+      <circle r="35" fill="none" stroke="#8be9fd" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <path d="M-10 -10a14 14 0 1 1 -1 20M-10 -10v9h9" fill="none" stroke="#8be9fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="0" cy="0" r="5" fill="#8be9fd" fill-opacity=".8"/>
+      <circle r="51" fill="none" stroke="#8be9fd" stroke-opacity=".45">
+        <animate attributeName="r" values="47;56;47" dur="3.2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".45;0;.45" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="-73" text-anchor="middle" class="mono num" fill="#8be9fd">01 / DEFINE</text>
+      <text x="0" y="78" text-anchor="middle" class="sans step">Understand</text>
+      <text x="0" y="99" text-anchor="middle" class="sans" fill="#9eafc6" font-size="11.5">Clarify the problem</text>
+    </g>
+
+    <!-- Step 02 -->
+    <g transform="translate(306 310)">
+      <circle r="45" fill="#0b1422" stroke="#8be9fd" stroke-width="1.5"/>
+      <circle r="35" fill="none" stroke="#8be9fd" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <path d="M-16 -13H16M-16 -2H8M-16 9H12" stroke="#8be9fd" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 5l6 6-6 6" fill="none" stroke="#8be9fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="0" y="-73" text-anchor="middle" class="mono num" fill="#8be9fd">02 / PLAN</text>
+      <text x="0" y="78" text-anchor="middle" class="sans step">Design</text>
+      <text x="0" y="99" text-anchor="middle" class="sans" fill="#9eafc6" font-size="11.5">Shape the experience</text>
+    </g>
+
+    <!-- Step 03 -->
+    <g transform="translate(502 310)">
+      <circle r="45" fill="#151126" stroke="#bd93f9" stroke-width="1.5"/>
+      <circle r="35" fill="none" stroke="#bd93f9" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <path d="M-13 -10l-10 10 10 10M13 -10L23 0 13 10M5 -17l-10 34" fill="none" stroke="#cdb2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle r="51" fill="none" stroke="#bd93f9" stroke-opacity=".38">
+        <animate attributeName="r" values="47;56;47" dur="3.7s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".38;0;.38" dur="3.7s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="-73" text-anchor="middle" class="mono num" fill="#cdb2ff">03 / IMPLEMENT</text>
+      <text x="0" y="78" text-anchor="middle" class="sans step">Build</text>
+      <text x="0" y="99" text-anchor="middle" class="sans" fill="#9eafc6" font-size="11.5">Write maintainable code</text>
+    </g>
+
+    <!-- Step 04 -->
+    <g transform="translate(698 310)">
+      <circle r="45" fill="#151126" stroke="#bd93f9" stroke-width="1.5"/>
+      <circle r="35" fill="none" stroke="#bd93f9" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <rect x="-15" y="-15" width="30" height="30" rx="5" fill="none" stroke="#cdb2ff" stroke-width="2"/>
+      <path d="M-8 0l5 5 11-12" fill="none" stroke="#cdb2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="0" y="-73" text-anchor="middle" class="mono num" fill="#cdb2ff">04 / CONNECT</text>
+      <text x="0" y="78" text-anchor="middle" class="sans step">Integrate</text>
+      <text x="0" y="99" text-anchor="middle" class="sans" fill="#9eafc6" font-size="11.5">Connect the components</text>
+    </g>
+
+    <!-- Step 05 -->
+    <g transform="translate(894 310)">
+      <circle r="45" fill="#201324" stroke="#ff79c6" stroke-width="1.5"/>
+      <circle r="35" fill="none" stroke="#ff79c6" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <path d="M-17 0l11 11 23-24" fill="none" stroke="#ff9bd5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle r="51" fill="none" stroke="#ff79c6" stroke-opacity=".4">
+        <animate attributeName="r" values="47;56;47" dur="4.1s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".4;0;.4" dur="4.1s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="-73" text-anchor="middle" class="mono num" fill="#ff9bd5">05 / VALIDATE</text>
+      <text x="0" y="78" text-anchor="middle" class="sans step">Test &amp; refine</text>
+      <text x="0" y="99" text-anchor="middle" class="sans" fill="#9eafc6" font-size="11.5">Find issues, improve quality</text>
+    </g>
+
+    <!-- Step 06 -->
+    <g transform="translate(1090 310)">
+      <circle r="45" fill="#0c1d19" stroke="#50fa7b" stroke-width="1.5"/>
+      <circle r="35" fill="none" stroke="#50fa7b" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <path d="M-15 0l10 10 20-22" fill="none" stroke="#50fa7b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle r="51" fill="none" stroke="#50fa7b" stroke-opacity=".4">
+        <animate attributeName="r" values="47;56;47" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".4;0;.4" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="-73" text-anchor="middle" class="mono num" fill="#50fa7b">06 / RELEASE</text>
+      <text x="0" y="78" text-anchor="middle" class="sans step">Ship</text>
+      <text x="0" y="99" text-anchor="middle" class="sans" fill="#9eafc6" font-size="11.5">Deliver and learn</text>
+    </g>
+
+    <!-- Feedback loop -->
+    <path d="M1090 433V466Q1090 485 1071 485H129Q110 485 110 466V433" fill="none" stroke="#8be9fd" stroke-opacity=".32" stroke-width="1.3" stroke-dasharray="4 7"/>
+    <path d="M130 485H1070" fill="none" stroke="url(#spectrum)" stroke-opacity=".7" stroke-width="1.5" stroke-dasharray="12 28">
+      <animate attributeName="stroke-dashoffset" values="0;-80" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <rect x="418" y="469" width="364" height="31" rx="15.5" fill="#0c1220" stroke="#8be9fd" stroke-opacity=".24"/>
+    <text x="600" y="489" text-anchor="middle" class="mono" fill="#a8bdd2" font-size="10" letter-spacing="1.6">FEEDBACK LOOP / ITERATE WHEN NEEDED</text>
+
+    <!-- Principle statement -->
+    <g transform="translate(60 535)">
+      <rect width="1080" height="57" rx="11" fill="#0b111d" stroke="#a9b8d0" stroke-opacity=".18"/>
+      <rect width="3" height="57" rx="1.5" fill="url(#spectrum)"/>
+      <text x="22" y="23" class="mono" fill="#8be9fd" font-size="10" letter-spacing="1.7">ENGINEERING PRINCIPLE</text>
+      <text x="22" y="43" class="sans" fill="#dce6f4" font-size="14">I connect the whole experience — understandable workflows, useful outcomes, and maintainable systems.</text>
+    </g>
+    <text x="60" y="608" class="mono" fill="#71809a" font-size="9.5" letter-spacing="1.5">UNDERSTAND → DESIGN → BUILD → INTEGRATE → TEST → SHIP</text>
+    <text x="1140" y="608" text-anchor="end" class="mono" fill="#71809a" font-size="9.5" letter-spacing="1.5">PROCESS / 04</text>
+    <rect x=".6" y=".6" width="1198.8" height="618.8" rx="23.4" fill="none" stroke="#8be9fd" stroke-opacity=".22" stroke-width="1.2"/>
+  </g>
+</svg>

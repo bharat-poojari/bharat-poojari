@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">03 / Toolkit — Bharat Poojari</title>
+  <desc id="desc">An animated standalone toolkit section showing technologies grouped by domain, with custom category panels, a rotating technical dial, animated signal bars, and technology labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b13"/>
+      <stop offset=".55" stop-color="#101624"/>
+      <stop offset="1" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8be9fd"/>
+      <stop offset=".48" stop-color="#bd93f9"/>
+      <stop offset="1" stop-color="#50fa7b"/>
+    </linearGradient>
+    <radialGradient id="haze">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#a9b8d0" stroke-opacity=".055" stroke-width=".7"/>
+      <circle cx="0" cy="0" r="1" fill="#8be9fd" fill-opacity=".12"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+      .label{font-size:10px;font-weight:700;letter-spacing:1.4px}
+      .tech{font-size:13px;font-weight:600;fill:#dbe6f5}
+      .desc{font-size:12.5px;fill:#aab8cd}
+    </style>
+    <clipPath id="clip"><rect width="1200" height="700" rx="24"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="700" fill="url(#bg)"/>
+    <rect width="1200" height="700" fill="url(#grid)"/>
+    <ellipse cx="1010" cy="160" rx="320" ry="260" fill="url(#haze)">
+      <animate attributeName="opacity" values=".55;1;.55" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Header -->
+    <g class="mono">
+      <circle cx="60" cy="48" r="4" fill="#8be9fd">
+        <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="76" y="52" fill="#8be9fd" font-size="11" letter-spacing="3">CAPABILITY MAP / 2026</text>
+      <text x="1140" y="52" text-anchor="end" fill="#74839c" font-size="10" letter-spacing="2">TOOLKIT — 03</text>
+    </g>
+    <text x="56" y="127" class="sans" fill="#f5f7fb" font-size="54" font-weight="850" letter-spacing="-2.8">My <tspan fill="url(#accent)">Toolkit.</tspan></text>
+    <text x="60" y="164" class="sans" fill="#aebbd0" font-size="16">The tools behind the ideas — grouped by the work they help me do.</text>
+    <path d="M60 190H1140" stroke="#a9b8d0" stroke-opacity=".17"/>
+    <path d="M60 190H250" stroke="url(#accent)" stroke-width="2.2" stroke-linecap="round">
+      <animate attributeName="stroke-dasharray" values="0 190;190 0;0 190" dur="6s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Left feature panel -->
+    <g transform="translate(60 220)">
+      <rect width="310" height="382" rx="16" fill="#0b111d" fill-opacity=".93" stroke="#8be9fd" stroke-opacity=".28"/>
+      <text x="22" y="29" class="mono" fill="#8be9fd" font-size="10" letter-spacing="1.8">STACK / OVERVIEW</text>
+      <g transform="translate(155 143)">
+        <circle r="96" fill="#0d1523" stroke="#8be9fd" stroke-opacity=".22"/>
+        <circle r="80" fill="none" stroke="#bd93f9" stroke-opacity=".4" stroke-dasharray="2 8">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="48s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="64" fill="none" stroke="#8be9fd" stroke-opacity=".35" stroke-dasharray="22 9 3 9">
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="34s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M0 -47L41 -24V24L0 47L-41 24V-24Z" fill="#101d2c" stroke="url(#accent)" stroke-width="1.5"/>
+        <path d="M-17 -9L-30 0-17 9M17 -9L30 0 17 9M7 -17L-7 17" fill="none" stroke="#8be9fd" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle r="5" fill="#e5fcff" filter="url(#glow)">
+          <animate attributeName="r" values="3.5;6;3.5" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="-95" r="4" fill="#50fa7b" filter="url(#glow)"/>
+        <circle cx="82" cy="48" r="3" fill="#ff79c6" filter="url(#glow)"/>
+        <circle cx="-84" cy="38" r="3" fill="#bd93f9" filter="url(#glow)"/>
+      </g>
+      <text x="155" y="277" text-anchor="middle" class="sans" fill="#f0f5fc" font-size="19" font-weight="800">Build. Connect. Refine.</text>
+      <text x="155" y="302" text-anchor="middle" class="sans" fill="#aab8cd" font-size="12.5">A practical, evolving toolkit</text>
+      <path d="M22 326H288" stroke="#dce7f6" stroke-opacity=".13"/>
+      <g class="mono" font-size="10">
+        <text x="22" y="350" fill="#8291a8">WORKING PRINCIPLE</text>
+        <text x="22" y="369" fill="#8be9fd">Choose tools for the problem.</text>
+      </g>
+    </g>
+
+    <!-- Right category cards -->
+    <g class="sans">
+      <!-- Frontend -->
+      <g transform="translate(395 220)">
+        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#8be9fd" stroke-opacity=".34"/>
+        <rect width="4" height="116" rx="2" fill="#8be9fd"/>
+        <text x="20" y="26" fill="#8be9fd" class="label">01 / FRONTEND</text>
+        <text x="20" y="52" class="tech">HTML</text><text x="94" y="52" class="tech">CSS</text><text x="154" y="52" class="tech">JavaScript</text><text x="264" y="52" class="tech">React</text>
+        <text x="20" y="75" class="desc">Interfaces, responsive layouts, client-side logic.</text>
+        <g transform="translate(20 92)" fill="#8be9fd">
+          <rect width="28" height="3" rx="1.5"><animate attributeName="width" values="10;28;10" dur="3s" repeatCount="indefinite"/></rect>
+          <rect x="34" width="18" height="3" rx="1.5" opacity=".55"/>
+          <rect x="58" width="34" height="3" rx="1.5" opacity=".3"/>
+        </g>
+      </g>
+
+      <!-- Backend -->
+      <g transform="translate(775 220)">
+        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#bd93f9" stroke-opacity=".34"/>
+        <rect width="4" height="116" rx="2" fill="#bd93f9"/>
+        <text x="20" y="26" fill="#cdb2ff" class="label">02 / BACKEND &amp; DATA</text>
+        <text x="20" y="52" class="tech">Node.js</text><text x="112" y="52" class="tech">PHP</text><text x="170" y="52" class="tech">MySQL</text>
+        <text x="20" y="75" class="desc">REST API workflows, server logic, data handling.</text>
+        <g transform="translate(20 92)" fill="#bd93f9">
+          <rect width="34" height="3" rx="1.5"><animate attributeName="width" values="34;14;34" dur="3.4s" repeatCount="indefinite"/></rect>
+          <rect x="40" width="24" height="3" rx="1.5" opacity=".55"/>
+          <rect x="72" width="18" height="3" rx="1.5" opacity=".3"/>
+        </g>
+      </g>
+
+      <!-- AI desktop -->
+      <g transform="translate(395 350)">
+        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#50fa7b" stroke-opacity=".3"/>
+        <rect width="4" height="116" rx="2" fill="#50fa7b"/>
+        <text x="20" y="26" fill="#50fa7b" class="label">03 / AI &amp; DESKTOP</text>
+        <text x="20" y="52" class="tech">Local-first AI</text><text x="146" y="52" class="tech">Desktop apps</text>
+        <text x="20" y="75" class="desc">Local model exploration and desktop workflows.</text>
+        <g transform="translate(20 92)" fill="#50fa7b">
+          <rect width="20" height="3" rx="1.5"><animate attributeName="width" values="20;36;20" dur="2.8s" repeatCount="indefinite"/></rect>
+          <rect x="42" width="24" height="3" rx="1.5" opacity=".55"/>
+          <rect x="72" width="34" height="3" rx="1.5" opacity=".3"/>
+        </g>
+      </g>
+
+      <!-- 3D web -->
+      <g transform="translate(775 350)">
+        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#ff79c6" stroke-opacity=".3"/>
+        <rect width="4" height="116" rx="2" fill="#ff79c6"/>
+        <text x="20" y="26" fill="#ff9bd5" class="label">04 / 3D WEB</text>
+        <text x="20" y="52" class="tech">Three.js</text><text x="104" y="52" class="tech">React-based 3D</text>
+        <text x="20" y="75" class="desc">Immersive scenes and interactive 3D experiences.</text>
+        <g transform="translate(20 92)" fill="#ff79c6">
+          <rect width="28" height="3" rx="1.5"><animate attributeName="width" values="28;12;28" dur="3.6s" repeatCount="indefinite"/></rect>
+          <rect x="36" width="24" height="3" rx="1.5" opacity=".55"/>
+          <rect x="68" width="30" height="3" rx="1.5" opacity=".3"/>
+        </g>
+      </g>
+
+      <!-- Developer tooling -->
+      <g transform="translate(395 480)">
+        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#f1fa8c" stroke-opacity=".28"/>
+        <rect width="4" height="116" rx="2" fill="#f1fa8c"/>
+        <text x="20" y="26" fill="#f1fa8c" class="label">05 / DEVELOPER TOOLING</text>
+        <text x="20" y="52" class="tech">TypeScript</text><text x="120" y="52" class="tech">VS Code extensions</text>
+        <text x="20" y="75" class="desc">Editor tooling and workflow-focused utilities.</text>
+        <g transform="translate(20 92)" fill="#f1fa8c">
+          <rect width="25" height="3" rx="1.5"><animate attributeName="width" values="25;38;25" dur="3.1s" repeatCount="indefinite"/></rect>
+          <rect x="44" width="20" height="3" rx="1.5" opacity=".55"/>
+          <rect x="70" width="29" height="3" rx="1.5" opacity=".3"/>
+        </g>
+      </g>
+
+      <!-- Workflow -->
+      <g transform="translate(775 480)">
+        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#8be9fd" stroke-opacity=".3"/>
+        <rect width="4" height="116" rx="2" fill="#8be9fd"/>
+        <text x="20" y="26" fill="#8be9fd" class="label">06 / WORKFLOW</text>
+        <text x="20" y="52" class="tech">Git</text><text x="65" y="52" class="tech">GitHub</text><text x="137" y="52" class="tech">VS Code</text>
+        <text x="20" y="75" class="desc">Version control, collaboration, daily development.</text>
+        <g transform="translate(20 92)" fill="#8be9fd">
+          <rect width="34" height="3" rx="1.5"><animate attributeName="width" values="34;18;34" dur="3.3s" repeatCount="indefinite"/></rect>
+          <rect x="40" width="24" height="3" rx="1.5" opacity=".55"/>
+          <rect x="72" width="18" height="3" rx="1.5" opacity=".3"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Footer note -->
+    <path d="M60 625H1140" stroke="#dce7f6" stroke-opacity=".15"/>
+    <circle cx="65" cy="651" r="3" fill="#50fa7b">
+      <animate attributeName="opacity" values=".3;1;.3" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="78" y="655" class="sans" fill="#aab8cd" font-size="12.5">A working toolkit, not a ranking of proficiency. The exact stack varies by project.</text>
+    <text x="1140" y="655" text-anchor="end" class="mono" fill="#71809a" font-size="10" letter-spacing="1.4">LEARN / APPLY / ITERATE</text>
+    <rect x=".6" y=".6" width="1198.8" height="698.8" rx="23.4" fill="none" stroke="#8be9fd" stroke-opacity=".22" stroke-width="1.2"/>
+  </g>
+</svg>
