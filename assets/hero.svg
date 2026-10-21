@@ -107,7 +107,9 @@
       <ellipse cx="862" cy="202" rx="145" ry="145" transform="rotate(-34 862 202)" stroke-dasharray="40 9 3 9" opacity=".28">
         <animateTransform attributeName="transform" type="rotate" from="360 862 202" to="0 862 202" dur="48s" repeatCount="indefinite"/>
       </ellipse>
-      <path d="M625 202H1099M862 28V376" stroke="#8BE9FD" stroke-opacity=".18" stroke-dasharray="3 9"/>
+      <path d="M625 202H1099M862 28V376" stroke="#8BE9FD" stroke-opacity=".18" stroke-dasharray="3 9">
+        <animate attributeName="stroke-dashoffset" values="0;-48" dur="5s" repeatCount="indefinite"/>
+      </path>
     </g>
 
     <!-- Moving energy points -->

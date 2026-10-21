@@ -28,7 +28,7 @@
 </defs>
 <rect width="1440" height="850" fill="url(#bg)"/>
 <rect width="1440" height="850" fill="url(#grid)"/>
-<circle cx="1185" cy="190" r="235" fill="#ff79c6" opacity=".045"/>
+<circle cx="1185" cy="190" r="235" fill="#ff79c6" opacity=".045"><animate attributeName="opacity" values=".025;.07;.025" dur="7.5s" repeatCount="indefinite"/></circle>
 <circle cx="1185" cy="190" r="170" fill="none" stroke="#ff79c6" stroke-opacity=".22" stroke-dasharray="3 10" class="orbit"/>
 <circle cx="1185" cy="190" r="120" fill="none" stroke="#8be9fd" stroke-opacity=".15" stroke-dasharray="4 12" class="orbit"/>
 <path d="M80 100H1360" stroke="#656b91" stroke-opacity=".55"/>
@@ -43,7 +43,9 @@
 
 <!-- connection motif -->
 <g transform="translate(1050 205)" class="bob">
-  <circle r="56" fill="#ff79c6" fill-opacity=".07" stroke="#ff79c6" stroke-opacity=".6"/>
+  <circle r="56" fill="#ff79c6" fill-opacity=".07" stroke="#ff79c6" stroke-opacity=".6">
+    <animate attributeName="fill-opacity" values=".04;.11;.04" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
   <circle r="38" fill="none" stroke="#8be9fd" stroke-opacity=".6" stroke-dasharray="3 6" class="orbit"/>
   <path d="M-19 -4L-3 -19L13 -4L-3 11Z" fill="none" stroke="#ff79c6" stroke-width="2.4" stroke-linejoin="round"/>
   <path d="M-3 11V24M13 -4H26" stroke="#8be9fd" stroke-width="2.4" stroke-linecap="round"/>

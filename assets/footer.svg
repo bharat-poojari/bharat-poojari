@@ -113,10 +113,18 @@
 
     <!-- Signal nodes -->
     <g filter="url(#glow)">
-      <circle cx="100" cy="110" r="2.5" fill="#8be9fd"/>
-      <circle cx="310" cy="68" r="2" fill="#8be9fd"/>
-      <circle cx="890" cy="152" r="2" fill="#bd93f9"/>
-      <circle cx="1100" cy="110" r="2.5" fill="#ff79c6"/>
+      <circle cx="100" cy="110" r="2.5" fill="#8be9fd">
+        <animate attributeName="r" values="2;3.5;2" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="310" cy="68" r="2" fill="#8be9fd">
+        <animate attributeName="opacity" values=".35;1;.35" dur="3.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="890" cy="152" r="2" fill="#bd93f9">
+        <animate attributeName="opacity" values=".35;1;.35" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1100" cy="110" r="2.5" fill="#ff79c6">
+        <animate attributeName="r" values="2;3.5;2" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- Header -->

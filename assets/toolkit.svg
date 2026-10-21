@@ -90,7 +90,9 @@
     <g class="sans">
       <!-- Frontend -->
       <g transform="translate(395 220)">
-        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#8be9fd" stroke-opacity=".34"/>
+        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#8be9fd" stroke-opacity=".34">
+          <animate attributeName="stroke-opacity" values=".24;.48;.24" dur="5.1s" repeatCount="indefinite"/>
+        </rect>
         <rect width="4" height="116" rx="2" fill="#8be9fd"/>
         <text x="20" y="26" fill="#8be9fd" class="label">01 / FRONTEND</text>
         <text x="20" y="52" class="tech">HTML</text><text x="94" y="52" class="tech">CSS</text><text x="154" y="52" class="tech">JavaScript</text><text x="264" y="52" class="tech">React</text>
@@ -104,7 +106,9 @@
 
       <!-- Backend -->
       <g transform="translate(775 220)">
-        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#bd93f9" stroke-opacity=".34"/>
+        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#bd93f9" stroke-opacity=".34">
+          <animate attributeName="stroke-opacity" values=".24;.48;.24" dur="5.8s" repeatCount="indefinite"/>
+        </rect>
         <rect width="4" height="116" rx="2" fill="#bd93f9"/>
         <text x="20" y="26" fill="#cdb2ff" class="label">02 / BACKEND &amp; DATA</text>
         <text x="20" y="52" class="tech">Node.js</text><text x="112" y="52" class="tech">PHP</text><text x="170" y="52" class="tech">MySQL</text>
@@ -118,7 +122,9 @@
 
       <!-- AI desktop -->
       <g transform="translate(395 350)">
-        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#50fa7b" stroke-opacity=".3"/>
+        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#50fa7b" stroke-opacity=".3">
+          <animate attributeName="stroke-opacity" values=".2;.44;.2" dur="5.4s" repeatCount="indefinite"/>
+        </rect>
         <rect width="4" height="116" rx="2" fill="#50fa7b"/>
         <text x="20" y="26" fill="#50fa7b" class="label">03 / AI &amp; DESKTOP</text>
         <text x="20" y="52" class="tech">Local-first AI</text><text x="146" y="52" class="tech">Desktop apps</text>
@@ -132,7 +138,9 @@
 
       <!-- 3D web -->
       <g transform="translate(775 350)">
-        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#ff79c6" stroke-opacity=".3"/>
+        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#ff79c6" stroke-opacity=".3">
+          <animate attributeName="stroke-opacity" values=".2;.44;.2" dur="6.2s" repeatCount="indefinite"/>
+        </rect>
         <rect width="4" height="116" rx="2" fill="#ff79c6"/>
         <text x="20" y="26" fill="#ff9bd5" class="label">04 / 3D WEB</text>
         <text x="20" y="52" class="tech">Three.js</text><text x="104" y="52" class="tech">React-based 3D</text>
@@ -146,7 +154,9 @@
 
       <!-- Developer tooling -->
       <g transform="translate(395 480)">
-        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#f1fa8c" stroke-opacity=".28"/>
+        <rect width="360" height="116" rx="13" fill="#0b111d" stroke="#f1fa8c" stroke-opacity=".28">
+          <animate attributeName="stroke-opacity" values=".18;.4;.18" dur="5.7s" repeatCount="indefinite"/>
+        </rect>
         <rect width="4" height="116" rx="2" fill="#f1fa8c"/>
         <text x="20" y="26" fill="#f1fa8c" class="label">05 / DEVELOPER TOOLING</text>
         <text x="20" y="52" class="tech">TypeScript</text><text x="120" y="52" class="tech">VS Code extensions</text>
@@ -160,7 +170,9 @@
 
       <!-- Workflow -->
       <g transform="translate(775 480)">
-        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#8be9fd" stroke-opacity=".3"/>
+        <rect width="365" height="116" rx="13" fill="#0b111d" stroke="#8be9fd" stroke-opacity=".3">
+          <animate attributeName="stroke-opacity" values=".2;.44;.2" dur="6.5s" repeatCount="indefinite"/>
+        </rect>
         <rect width="4" height="116" rx="2" fill="#8be9fd"/>
         <text x="20" y="26" fill="#8be9fd" class="label">06 / WORKFLOW</text>
         <text x="20" y="52" class="tech">Git</text><text x="65" y="52" class="tech">GitHub</text><text x="137" y="52" class="tech">VS Code</text>

@@ -68,6 +68,10 @@
       <circle r="3" cy="310" fill="#bd93f9">
         <animate attributeName="cx" values="1090;110;1090" dur="10s" repeatCount="indefinite"/>
       </circle>
+      <circle r="2" cy="310" fill="#50fa7b">
+        <animate attributeName="cx" values="110;1090;110" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".35;1;.35" dur="2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- Step 01 -->
@@ -100,6 +104,10 @@
     <g transform="translate(502 310)">
       <circle r="45" fill="#151126" stroke="#bd93f9" stroke-width="1.5"/>
       <circle r="35" fill="none" stroke="#bd93f9" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <circle r="45" fill="none" stroke="#bd93f9" stroke-opacity=".35">
+        <animate attributeName="r" values="45;53;45" dur="3.8s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".35;0;.35" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
       <path d="M-13 -10l-10 10 10 10M13 -10L23 0 13 10M5 -17l-10 34" fill="none" stroke="#cdb2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <circle r="51" fill="none" stroke="#bd93f9" stroke-opacity=".38">
         <animate attributeName="r" values="47;56;47" dur="3.7s" repeatCount="indefinite"/>
@@ -114,6 +122,10 @@
     <g transform="translate(698 310)">
       <circle r="45" fill="#151126" stroke="#bd93f9" stroke-width="1.5"/>
       <circle r="35" fill="none" stroke="#bd93f9" stroke-opacity=".3" stroke-dasharray="2 6"/>
+      <circle r="45" fill="none" stroke="#bd93f9" stroke-opacity=".35">
+        <animate attributeName="r" values="45;53;45" dur="4.3s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values=".35;0;.35" dur="4.3s" repeatCount="indefinite"/>
+      </circle>
       <rect x="-15" y="-15" width="30" height="30" rx="5" fill="none" stroke="#cdb2ff" stroke-width="2"/>
       <path d="M-8 0l5 5 11-12" fill="none" stroke="#cdb2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="0" y="-73" text-anchor="middle" class="mono num" fill="#cdb2ff">04 / CONNECT</text>

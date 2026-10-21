@@ -64,28 +64,36 @@
     </g>
 
     <g transform="translate(60 238)">
-      <rect width="240" height="140" rx="18" class="panel"/>
+      <rect width="240" height="140" rx="18" class="panel">
+        <animate attributeName="stroke-opacity" values=".2;.42;.2" dur="5.2s" repeatCount="indefinite"/>
+      </rect>
       <text x="24" y="28" class="label">01 / REPOS</text>
       <text x="24" y="86" class="stat">13</text>
       <text x="24" y="108" class="meta">PUBLIC REPOSITORIES</text>
     </g>
 
     <g transform="translate(325 238)">
-      <rect width="240" height="140" rx="18" class="panel"/>
+      <rect width="240" height="140" rx="18" class="panel">
+        <animate attributeName="stroke-opacity" values=".2;.42;.2" dur="5.8s" repeatCount="indefinite"/>
+      </rect>
       <text x="24" y="28" class="label">02 / FOLLOWERS</text>
       <text x="24" y="86" class="stat">0</text>
       <text x="24" y="108" class="meta">PROFILE FOLLOWERS</text>
     </g>
 
     <g transform="translate(590 238)">
-      <rect width="240" height="140" rx="18" class="panel"/>
+      <rect width="240" height="140" rx="18" class="panel">
+        <animate attributeName="stroke-opacity" values=".2;.42;.2" dur="6.4s" repeatCount="indefinite"/>
+      </rect>
       <text x="24" y="28" class="label">03 / FOLLOWING</text>
       <text x="24" y="86" class="stat">0</text>
       <text x="24" y="108" class="meta">PEOPLE FOLLOWED</text>
     </g>
 
     <g transform="translate(855 238)">
-      <rect width="285" height="140" rx="18" class="panel"/>
+      <rect width="285" height="140" rx="18" class="panel">
+        <animate attributeName="stroke-opacity" values=".2;.42;.2" dur="7s" repeatCount="indefinite"/>
+      </rect>
       <text x="24" y="28" class="label">04 / STARS</text>
       <text x="24" y="86" class="stat">12</text>
       <text x="24" y="108" class="meta">TOTAL REPO STARS</text>

@@ -64,7 +64,9 @@
 
     <!-- Card 01: OffyAI -->
     <g transform="translate(60 220)">
-      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#8be9fd" stroke-opacity=".32"/>
+      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#8be9fd" stroke-opacity=".32">
+        <animate attributeName="stroke-opacity" values=".24;.48;.24" dur="5.2s" repeatCount="indefinite"/>
+      </rect>
       <rect x="1" y="1" width="523" height="222" rx="14" fill="none" stroke="#8be9fd" stroke-opacity=".07"/>
       <path d="M18 0H95" stroke="#8be9fd" stroke-width="2.4" stroke-linecap="round">
         <animate attributeName="stroke-dasharray" values="0 77;77 0;0 77" dur="5s" repeatCount="indefinite"/>
@@ -101,7 +103,9 @@
 
     <!-- Card 02: Furniqo -->
     <g transform="translate(615 220)">
-      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#bd93f9" stroke-opacity=".34"/>
+      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#bd93f9" stroke-opacity=".34">
+        <animate attributeName="stroke-opacity" values=".25;.5;.25" dur="6s" repeatCount="indefinite"/>
+      </rect>
       <path d="M18 0H95" stroke="#bd93f9" stroke-width="2.4" stroke-linecap="round">
         <animate attributeName="stroke-dasharray" values="0 77;77 0;0 77" dur="5.7s" repeatCount="indefinite"/>
       </path>
@@ -134,7 +138,9 @@
 
     <!-- Card 03: CodePolish -->
     <g transform="translate(60 462)">
-      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#50fa7b" stroke-opacity=".3"/>
+      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#50fa7b" stroke-opacity=".3">
+        <animate attributeName="stroke-opacity" values=".22;.46;.22" dur="5.6s" repeatCount="indefinite"/>
+      </rect>
       <path d="M18 0H95" stroke="#50fa7b" stroke-width="2.4" stroke-linecap="round">
         <animate attributeName="stroke-dasharray" values="0 77;77 0;0 77" dur="5.2s" repeatCount="indefinite"/>
       </path>
@@ -166,7 +172,9 @@
 
     <!-- Card 04: more experiments -->
     <g transform="translate(615 462)">
-      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#ff79c6" stroke-opacity=".3"/>
+      <rect width="525" height="224" rx="15" fill="#0b111d" fill-opacity=".93" stroke="#ff79c6" stroke-opacity=".3">
+        <animate attributeName="stroke-opacity" values=".22;.46;.22" dur="6.4s" repeatCount="indefinite"/>
+      </rect>
       <path d="M18 0H95" stroke="#ff79c6" stroke-width="2.4" stroke-linecap="round">
         <animate attributeName="stroke-dasharray" values="0 77;77 0;0 77" dur="6.1s" repeatCount="indefinite"/>
       </path>

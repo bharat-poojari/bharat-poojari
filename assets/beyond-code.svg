@@ -34,7 +34,7 @@
 </defs>
 <!-- Atmosphere -->
 <rect width="1440" height="860" fill="url(#bg)"/><rect width="1440" height="860" fill="url(#grid)"/>
-<circle cx="1190" cy="160" r="190" fill="#0879ff" opacity=".07" filter="url(#softGlow)"/>
+<circle cx="1190" cy="160" r="190" fill="#0879ff" opacity=".07" filter="url(#softGlow)"><animate attributeName="opacity" values=".035;.09;.035" dur="7s" repeatCount="indefinite"/></circle>
 <path d="M0 108H1440M0 826H1440" stroke="url(#fadeLine)" stroke-width="1"/>
 <path d="M44 130V796M1396 130V796" stroke="#2379b4" stroke-opacity=".22" stroke-dasharray="2 8"/>
 <!-- Header -->
